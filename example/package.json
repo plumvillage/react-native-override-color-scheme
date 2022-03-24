@@ -1,0 +1,24 @@
+{
+  "name": "react-native-override-color-scheme-example",
+  "description": "Example app for react-native-override-color-scheme",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "@react-native-community/datetimepicker": "^6.1.0",
+    "@react-native-picker/picker": "^2.4.0",
+    "react": "17.0.2",
+    "react-native": "0.67.4",
+    "react-native-modal-datetime-picker": "^13.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "metro-react-native-babel-preset": "^0.66.2"
+  }
+}
