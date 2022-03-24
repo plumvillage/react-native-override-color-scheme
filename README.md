@@ -45,13 +45,14 @@ No additional step is required.
 ## Usage
 
 ```js
-import { multiply } from "react-native-override-color-scheme";
+import overrideColorScheme from 'react-native-override-color-scheme';
 
 // ...
 
-const result = await multiply(3, 7);
+overrideColorScheme.setScheme('dark'); // or `light` or `undefined` for system default
 ```
 
+See the [example](example) for advanced use cases.
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
