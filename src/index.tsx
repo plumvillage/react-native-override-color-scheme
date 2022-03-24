@@ -17,7 +17,7 @@ const OverrideColorScheme = NativeModules.OverrideColorScheme
       }
     );
 
-export function setScheme(scheme: ColorSchemeName): Promise<null> {
+export function setScheme(scheme?: ColorSchemeName): Promise<null> {
   return OverrideColorScheme.setScheme(scheme);
 }
 
