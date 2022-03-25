@@ -34,7 +34,12 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "dark mode",
+    "night mode",
+    "color scheme",
+    "theme",
+    "override"
   ],
   "repository": "https://github.com/plumvillage/react-native-override-color-scheme",
   "author": "Plum Village App <hello@plumvillage.app> (https://plumvillage.app/)",
