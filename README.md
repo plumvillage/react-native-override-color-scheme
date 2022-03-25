@@ -24,7 +24,7 @@ If you are using RN >= 0.60, only run `npx pod-install`. Then rebuild your proje
 To enable this, please follow the steps below:
 1. Open your `/ios/{projectName}/AppDelegate.m` file
 1. At the top of the file, import the OverrideColorScheme module: `#import <OverrideColorScheme.h>`
-1. And then, within your existing `didFinishLaunchingWithOptions` method, add `[OverrideColorScheme fixAlerts];` to the top of the method (see below).
+1. And then, within your existing `didFinishLaunchingWithOptions` method, add `[OverrideColorScheme enableAlertSupport];` to the top of the method (see below).
 
 ```Objective-C
 
@@ -34,7 +34,7 @@ To enable this, please follow the steps below:
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [OverrideColorScheme fixAlerts]; // <--- and add this line
+  [OverrideColorScheme enableAlertSupport]; // <--- and add this line
   //...
 }
 ```
