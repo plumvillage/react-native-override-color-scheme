@@ -26,7 +26,7 @@ class OverrideColorScheme: NSObject {
   }
 
   @objc
-  static func fixAlerts() {
+  static func enableAlertSupport() {
     UIAlertController.swizzle()
   }
 }

@@ -42,7 +42,7 @@ static void InitializeFlipper(UIApplication *application) {
                                                    moduleName:@"OverrideColorSchemeExample"
                                             initialProperties:nil];
 
-  [OverrideColorScheme fixAlerts];
+  [OverrideColorScheme enableAlertSupport];
 
   if (@available(iOS 13.0, *)) {
       rootView.backgroundColor = [UIColor systemBackgroundColor];

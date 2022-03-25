@@ -9,5 +9,5 @@
 @class OverrideColorScheme;
 
 @interface OverrideColorScheme : NSObject
-+ (void)fixAlerts;
++ (void)enableAlertSupport;
 @end
