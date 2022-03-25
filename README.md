@@ -14,14 +14,18 @@ or
 yarn add react-native-override-color-scheme
 ```
 
-#### RN >= 0.60
+### RN >= 0.60
+
 If you are using RN >= 0.60, only run `npx pod-install`. Then rebuild your project.
 
-#### iOS
-##### Optional support for alerts on iOS
-> :warning: By default, overriding the interface style (light or dark) using this package doesn't work for alerts on iOS. We use [method swizzling](https://medium.com/rocknnull/ios-to-swizzle-or-not-to-swizzle-f8b0ed4a1ce6) for the `viewWillAppear` method of `UIAlertController` class which might create problems in some cases (for example, if another package is also swizzling the same class method). That's why we have made this step optional.
+### iOS
 
-To enable this, please follow the steps below:
+#### Optional support for alerts on iOS
+
+> :warning: We use [method swizzling](https://medium.com/rocknnull/ios-to-swizzle-or-not-to-swizzle-f8b0ed4a1ce6) to enable support for alerts on iOS. Method swizzling is used by [Firebase iOS SDK](https://firebase.google.com/docs/cloud-messaging/ios/client#method_swizzling_in) as well, but it can be problematic in some cases, especially when another library is also swizzling the same method. That’s why we have made this step optional.
+
+To enable support for alerts on iOS, please follow the steps below:
+
 1. Open your `/ios/{projectName}/AppDelegate.m` file
 1. At the top of the file, import the OverrideColorScheme module: `#import <OverrideColorScheme.h>`
 1. And then, within your existing `didFinishLaunchingWithOptions` method, add `[OverrideColorScheme enableAlertSupport];` to the top of the method (see below).
@@ -39,7 +43,8 @@ To enable this, please follow the steps below:
 }
 ```
 
-#### Android
+### Android
+
 No additional step is required.
 
 ## Usage
@@ -53,6 +58,7 @@ overrideColorScheme.setScheme('dark'); // or `light` or `undefined` for system d
 ```
 
 See the [example](example) for advanced use cases.
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
