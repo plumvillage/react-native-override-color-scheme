@@ -1,6 +1,6 @@
 {
   "name": "react-native-override-color-scheme",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native package to let users override the app's color scheme/theme",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
