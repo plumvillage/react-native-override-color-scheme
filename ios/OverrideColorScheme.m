@@ -6,4 +6,9 @@ RCT_EXTERN_METHOD(setScheme:(NSString)colorScheme
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 
++ (BOOL)requiresMainQueueSetup
+{
+   return YES;
+}
+
 @end
