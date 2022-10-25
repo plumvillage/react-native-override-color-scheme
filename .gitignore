@@ -41,13 +41,9 @@ local.properties
 android.iml
 *.hprof
 
-# Cocoapods
-#
-example/ios/Pods
-
-# Bundler
-#
-example/vendor/bundle
+# Ruby / CocoaPods
+example/ios/Pods/
+example/vendor/bundle/
 
 # node.js
 #

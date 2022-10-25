@@ -12,13 +12,13 @@
     "@react-native-community/datetimepicker": "^6.1.0",
     "@react-native-picker/picker": "^2.4.0",
     "react": "17.0.2",
-    "react-native": "0.67.4",
+    "react-native": "0.68.4",
     "react-native-modal-datetime-picker": "^13.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "babel-plugin-module-resolver": "^4.0.0",
-    "metro-react-native-babel-preset": "^0.66.2"
+    "metro-react-native-babel-preset": "^0.67.0"
   }
 }
