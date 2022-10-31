@@ -1,6 +1,6 @@
 # `react-native-override-color-scheme`
 
-React Native package to let users override the app's color scheme/theme
+React Native package to let users override the app's color scheme/theme.
 
 ## Installation
 
@@ -58,6 +58,10 @@ overrideColorScheme.setScheme('dark'); // or `light` or `undefined` for system d
 ```
 
 See the [example](example) for advanced use cases.
+
+## Supporting
+
+This package is maintained by the [Plum Village App](https://plumvillage.app/) team and used by the App. You can [set up a donation](https://plumvillage.app/donations/) if you would like to financially support the further development of Plum Village App and this package.
 
 ## Contributing
 
