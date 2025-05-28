@@ -9,7 +9,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.2.1'
+    classpath 'com.android.tools.build:gradle:7.4.2'
     // noinspection DifferentKotlinGradleVersion
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
   }
@@ -22,15 +22,15 @@ def getExtOrDefault(name) {
   return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['OverrideColorScheme_' + name]
 }
 
-def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties['OverrideColorScheme_' + name]).toInteger()
+def getExtOrIntegerDefault(name, fallback) {
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.hasProperty('OverrideColorScheme_' + name) ? project.properties['OverrideColorScheme_' + name].toInteger() : fallback)
 }
 
 android {
-  compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
+  compileSdkVersion getExtOrIntegerDefault('compileSdkVersion', 34)
   defaultConfig {
-    minSdkVersion 16
-    targetSdkVersion getExtOrIntegerDefault('targetSdkVersion')
+    minSdkVersion 24
+    targetSdkVersion getExtOrIntegerDefault('targetSdkVersion', 34)
     versionCode 1
     versionName "1.0"
     
