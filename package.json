@@ -41,7 +41,10 @@
     "theme",
     "override"
   ],
-  "repository": "https://github.com/plumvillage/react-native-override-color-scheme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plumvillage/react-native-override-color-scheme.git"
+  },
   "author": "Plum Village App <hello@plumvillage.app> (https://plumvillage.app/)",
   "license": "MIT",
   "bugs": {
