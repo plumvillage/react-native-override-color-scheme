@@ -1,5 +1,7 @@
 
 
+## [2.0.0](https://github.com/plumvillage/react-native-override-color-scheme/compare/v1.0.3...v2.0.0) (2025-05-29)
+
 ## [1.0.3](https://github.com/plumvillage/react-native-override-color-scheme/compare/v1.0.2...v1.0.3) (2022-10-31)
 
 
